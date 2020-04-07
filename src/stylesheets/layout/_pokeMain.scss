@@ -1,0 +1,39 @@
+* {
+    list-style: none;
+    padding: 0px;
+}
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .pokeList {
+        .Pokemon {
+            background-color: lightblue;
+            border-radius: 10px;
+            border: solid grey 2px;
+            .pokeContainer {
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                ::first-letter {
+                    text-transform: uppercase;
+                }
+                .pokeTypes {
+                    .pokeType {
+                        margin: 5px;
+                        text-align: center;
+                        background-color: grey;
+                        border-radius: 15px;
+                        padding: 5px;
+                        text-transform: uppercase;
+                        color: white;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
